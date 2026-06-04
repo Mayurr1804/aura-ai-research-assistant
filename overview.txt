@@ -1,0 +1,254 @@
+PROJECT SUMMARY — AURA: Autonomous AI Research Assistant
+
+1. PROJECT OVERVIEW
+
+AURA (Autonomous AI Research Assistant) is a web-based AI platform designed to automate and assist the academic research workflow. The system helps users search research papers, analyze them, discover datasets, identify research gaps, and generate research roadmaps.
+
+The goal is to create a powerful research workspace that reduces the time researchers and students spend exploring literature and planning their research.
+
+This project will be developed as a full-stack AI system with a structured backend, an interactive web interface, and multiple intelligent analysis modules.
+
+Primary objective: Build a research-grade AI assistant that supports the entire literature exploration and research planning process.
+
+Target use cases:
+• Students starting a research project
+• Researchers exploring a new topic
+• Engineers searching technical papers
+• Academic literature review automation
+
+2. CORE PROJECT GOALS
+
+The system will allow a user to:
+
+• Search research papers across multiple sources
+• Sort and rank papers intelligently
+• Identify the most important foundational paper
+• Generate structured summaries of papers
+• Detect datasets mentioned in papers
+• Provide dataset links if available
+• Suggest similar datasets if original dataset is not public
+• Generate a professional email to authors to request datasets (only when dataset is private)
+• Automatically generate a literature review
+• Visualize citation relationships between papers
+• Detect research gaps from existing literature
+• Generate a step-by-step research roadmap
+
+3. KEY FEATURES (FINAL MVP SCOPE)
+
+Paper Search
+The user provides a research problem statement and selects the field and source of papers.
+
+Supported sources:
+• ArXiv
+• Semantic Scholar
+• Google Scholar
+• PapersWithCode
+
+Paper Sorting
+Users can sort retrieved papers by:
+• Most relevant
+• Most cited
+• Most recent
+
+Paper Ranking
+The system calculates a ranking score using:
+Relevance similarity + citation count + recency factor.
+
+Best Base Paper Suggestion
+The system automatically highlights the most important foundational paper in the research area.
+
+Structured Paper Summary
+For each paper the system generates a structured analysis including:
+• Problem
+• Method
+• Dataset
+• Results
+• Limitations
+
+Dataset Finder
+The system identifies datasets mentioned in the paper.
+
+If dataset is public:
+• dataset name
+• dataset link
+
+If dataset is not public:
+• suggest similar datasets
+
+Author Email Generator
+If the dataset in the selected paper is private, the system generates a professional email requesting dataset access.
+
+Important rule:
+Email generator only appears when dataset exists but is not publicly available.
+
+Literature Review Generator
+The system analyzes the top relevant papers and automatically produces a literature review section summarizing previous research.
+
+Citation Graph Visualization
+The system visualizes the relationship between papers using citation networks.
+
+The graph shows:
+• base paper
+• referenced papers
+• papers citing it
+
+Research Gap Detector
+The system analyzes limitations and methods across papers to identify gaps in current research.
+
+Output includes:
+• common approaches used
+• limitations in existing work
+• unexplored research directions
+
+Research Roadmap Generator
+The system generates a step-by-step research execution plan based on:
+• problem statement
+• base paper
+• literature review
+• research gaps
+
+4. SYSTEM ARCHITECTURE OVERVIEW
+
+User Interface (Web App)
+↓
+API Layer (FastAPI backend)
+↓
+Research Retrieval Layer
+↓
+Ranking and Analysis Modules
+↓
+AI Processing (LLM based reasoning)
+↓
+Research Intelligence Modules
+↓
+Results delivered to the user workspace
+
+The system integrates data retrieval, AI analysis, and research planning modules into a unified research environment.
+
+5. TECHNOLOGY STACK
+
+Backend
+Python
+FastAPI
+LangChain
+OpenAI API
+
+Research APIs
+ArXiv API
+Semantic Scholar API
+PapersWithCode API
+Scholarly (Google Scholar wrapper)
+
+NLP & AI
+Sentence Transformers
+LLM summarization
+Prompt engineering
+
+Frontend
+Next.js / React
+TailwindCSS
+
+Graph Visualization
+D3.js or Cytoscape.js
+
+Database
+SQLite (initial stage)
+
+Version Control
+Git
+GitHub
+
+6. PROJECT FOLDER STRUCTURE
+
+Repository name:
+aura-ai-research-assistant
+
+Main folders:
+
+backend
+api
+retrieval
+ranking
+analysis
+datasets
+email
+graph
+research
+
+frontend
+
+docs
+
+demo
+
+7. DEVELOPMENT ROADMAP
+
+Phase 1
+Project setup and backend structure.
+
+Phase 2
+Paper retrieval system using research APIs.
+
+Phase 3
+Sorting and ranking engine.
+
+Phase 4
+Base paper identification.
+
+Phase 5
+Paper summarization.
+
+Phase 6
+Dataset detection and dataset recommendation.
+
+Phase 7
+Dataset request email generator.
+
+Phase 8
+Citation graph visualization.
+
+Phase 9
+Literature review generation.
+
+Phase 10
+Research gap detection.
+
+Phase 11
+Research roadmap generator.
+
+Phase 12
+Frontend dashboard and UI.
+
+Phase 13
+Website documentation and demo video.
+
+8. FINAL PROJECT OUTPUT
+
+The final project will include:
+
+• A working web-based research assistant platform
+• Clean and structured GitHub repository
+• Architecture documentation
+• Demo video
+• Project website
+• Research-style system documentation
+
+9. PURPOSE OF THE PROJECT
+
+This project is designed to demonstrate:
+
+• AI systems engineering
+• research workflow automation
+• large-scale AI architecture design
+• applied natural language processing
+• full-stack AI product development
+
+The project is intended to be strong enough for:
+• R&D internships
+• AI research roles
+• advanced AI portfolios
+
+10. PROJECT NAME
+
+AURA
+Autonomous AI Research Assistant

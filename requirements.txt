@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+arxiv
+sentence-transformers
+groq
+requests
