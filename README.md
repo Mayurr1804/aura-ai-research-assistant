@@ -1,10 +1,10 @@
-# AURA AI Research Assistant 🚀
+# AURA AI Research Assistant 
 
 AURA is an autonomous AI-powered research copilot that helps researchers move from a research idea to a complete research workflow. 
 
 Instead of manually searching papers, reading dozens of PDFs, finding datasets, identifying research gaps, and creating roadmaps, AURA automates the entire process.
 
-## 🌟 Features
+##  Features
 - **Semantic & ArXiv Paper Retrieval:** Finds the most relevant papers based on your query.
 - **Dataset Intelligence:** Detects datasets mentioned in papers and checks their availability.
 - **Research Gaps & Roadmap:** Automatically identifies unsolved problems and generates a step-by-step research plan.
@@ -13,13 +13,13 @@ Instead of manually searching papers, reading dozens of PDFs, finding datasets, 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend:** Next.js 15, TypeScript, Tailwind CSS, Glassmorphism UI, React Flow
 - **Backend:** FastAPI, Python, Sentence Transformers
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 The project is split into two folders: the backend (`aura-ai-research-assistant`) and the frontend (`aura-frontend`).
 
